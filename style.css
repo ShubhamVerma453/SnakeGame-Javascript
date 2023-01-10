@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    background-color: rgb(215, 215, 215);
+}
+#speed{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin: .5%;
+    padding: .5% 3%;
+}
+.game-over{
+    background-color: red;
+}
+#board{
+    height: 90vmin;
+    width: 90vmin;
+    background-color: black;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+}
+.snake{
+    background-color: lime;
+}
+.snake-head{
+    background-color: rgb(6, 132, 6);
+}
+.food{
+    background-color: red;
+    border-radius: 12px;
+}
